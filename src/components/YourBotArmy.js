@@ -48,6 +48,7 @@ const YourBotArmy = ({ army, releaseBot, dischargeBot }) => {
       ))}
     </div>
   );
+  
 };
 
 export default YourBotArmy;
