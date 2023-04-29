@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Collection from './components/BotCollection';
-import Army from './components/YourBotArmy';
+import YourBotArmy from './components/YourBotArmy';
 import './App.css';
 
 const App = () => {
@@ -22,16 +22,16 @@ const App = () => {
     })
       .then(response => {
         if (response.ok) {
-          handleBotRelease(id);
+          setArmy(army.filter(b => b.id !== id)); // remove bot with specified id from army state directly
         }
       })
       .catch(error => console.error(error));
-      
   };
 
   return (
     <div>
-      <Army army={army} releaseBot={handleBotRelease} dischargeBot={handleBotDischarge} />
+      <YourBotArmy army={army} releaseBot={handleBotRelease} dischargeBot={handleBotDischarge} setArmy={setArmy} />
+
       <Collection onBotEnlisted={handleBotEnlisted} onBotRelease={handleBotRelease}  />
     </div>
   );
