@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css'
+import '../App.css';
 
-
-const Collection = () => {
+const BotCollection = ({ onBotEnlisted, onBotRelease }) => {
   const [bots, setBots] = useState([]);
 
   useEffect(() => {
@@ -12,9 +11,17 @@ const Collection = () => {
       .catch(error => console.error(error));
   }, []);
 
+  useEffect(() => {
+    setBots(bots => bots.filter(bot => !onBotRelease || !onBotRelease(bot.id)));
+  }, [onBotRelease]);
+
+  const handleEnlist = (bot) => {
+    onBotEnlisted(bot);
+  };
+
   return (
-    <div>
-      <h1>Collection</h1>
+    <div >
+      <h1>Bot Collection</h1>
       <div className="card-row">
         {bots.map(bot => (
           <div className="card" key={bot.id}>
@@ -26,6 +33,8 @@ const Collection = () => {
               <p className="card-text">Armor: {bot.armor}</p>
               <p className="card-text">Class: {bot.bot_class}</p>
               <p className="card-text">Catchphrase: {bot.catchphrase}</p>
+
+              <button onClick={() => handleEnlist(bot)}>Enlist</button>
             </div>
           </div>
         ))}
@@ -34,4 +43,4 @@ const Collection = () => {
   );
 };
 
-export default Collection;
+export default BotCollection;

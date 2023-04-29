@@ -1,48 +1,39 @@
-import React, { useState, useEffect } from "react";
-import Collection from "./components/Collection";
-import Army from "./components/Army";
+import React, { useState } from 'react';
+import Collection from './components/BotCollection';
+import Army from './components/YourBotArmy';
+import './App.css';
 
-function App() {
-  const [bots, setBots] = useState([]);
-  const [enlistedBots, setEnlistedBots] = useState([]);
+const App = () => {
+  const [army, setArmy] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:8001/bots")
-      .then((response) => response.json())
-      .then((data) => setBots(data.bots));
-  }, []);
-
-  const enlistBot = (botToEnlist) => {
-    if (!enlistedBots.includes(botToEnlist)) {
-      setEnlistedBots([...enlistedBots, botToEnlist]);
+  const handleBotEnlisted = (bot) => {
+    if (!army.find(b => b.id === bot.id)) {
+      setArmy([...army, bot]);
     }
   };
 
-  const releaseBot = (id) => {
-    setEnlistedBots(enlistedBots.filter((bot) => bot.id !== id));
+  const handleBotRelease = (id) => {
+    setArmy(army.filter(b => b.id !== id));
   };
 
-  const dischargeBot = (id) => {
+  const handleBotDischarge = (id) => {
     fetch(`http://localhost:8001/bots/${id}`, {
-      method: "DELETE",
+      method: 'DELETE',
     })
-      .then((response) => response.json())
-      .then((data) => {
-        setBots(bots.filter((bot) => bot.id !== id));
-        setEnlistedBots(enlistedBots.filter((bot) => bot.id !== id));
-      });
+      .then(response => {
+        if (response.ok) {
+          handleBotRelease(id);
+        }
+      })
+      .catch(error => console.error(error));
   };
 
   return (
-    <div className="App">
-      <h1>Bot Battlr</h1>
-
-
-      <Army bots={enlistedBots} releaseBot={releaseBot} dischargeBot={dischargeBot} />
-      <Collection bots={bots} enlistBot={enlistBot} />
-     
+    <div>
+      <Army army={army} releaseBot={handleBotRelease} dischargeBot={handleBotDischarge} />
+      <Collection onBotEnlisted={handleBotEnlisted} onBotRelease={handleBotRelease} />
     </div>
   );
-}
+};
 
 export default App;
