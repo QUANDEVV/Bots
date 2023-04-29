@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div>
       <Army army={army} releaseBot={handleBotRelease} dischargeBot={handleBotDischarge} />
-      <Collection onBotEnlisted={handleBotEnlisted} onBotRelease={handleBotRelease} />
+      <Collection onBotEnlisted={handleBotEnlisted} onBotRelease={handleBotRelease}  />
     </div>
   );
 };
