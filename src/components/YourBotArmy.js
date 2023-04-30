@@ -5,7 +5,7 @@ const YourBotArmy = ({ army, releaseBot, dischargeBot }) => {
 if (!army) return null;
 
 const handleDischarge = (id) => {
-fetch(`/db.json/${id}`, {
+fetch(`http://localhost:8001/bots/${id}`, {
 method: 'DELETE',
 })
 .then(response => {
@@ -16,7 +16,6 @@ alert(`Bot ${id} has been discharged forever!`);
 })
 .catch(error => console.error(error));
 };
-
 
 return (
 <div className='your-bot-army yellow-bg'>

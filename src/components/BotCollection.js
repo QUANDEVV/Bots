@@ -5,7 +5,7 @@ const BotCollection = ({ onBotEnlisted, onBotRelease }) => {
 const [bots, setBots] = useState([]);
 
 useEffect(() => {
-  fetch('/db.json')
+fetch('http://localhost:8001/bots')
 .then(response => response.json())
 .then(data => setBots(data))
 .catch(error => console.error(error));
