@@ -5,7 +5,7 @@ const YourBotArmy = ({ army, releaseBot, dischargeBot }) => {
 if (!army) return null;
 
 const handleDischarge = (id) => {
-fetch(`http://localhost:8001/bots/${id}`, {
+fetch(`/db.json/${id}`, {
 method: 'DELETE',
 })
 .then(response => {
