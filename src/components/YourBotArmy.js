@@ -17,6 +17,7 @@ alert(`Bot ${id} has been discharged forever!`);
 .catch(error => console.error(error));
 };
 
+
 return (
 <div className='your-bot-army yellow-bg'>
 <h2>Your Bot Army</h2>
