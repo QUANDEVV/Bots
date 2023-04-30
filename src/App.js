@@ -17,7 +17,7 @@ setArmy(army.filter(b => b.id !== id));
 };
 
 const handleBotDischarge = (id) => {
-fetch(`http://localhost:8002/bots/${id}`, {
+fetch(`https://my-json-server.typicode.com/QUANDEVV/bots/bots/${id}`, {
 method: 'DELETE',
 })
 .then(response => {

@@ -5,7 +5,7 @@ const BotCollection = ({ onBotEnlisted, onBotRelease }) => {
 const [bots, setBots] = useState([]);
 
 useEffect(() => {
-fetch('http://localhost:8002/bots')
+fetch('https://my-json-server.typicode.com/QUANDEVV/bots/bots')
 .then(response => response.json())
 .then(data => setBots(data))
 .catch(error => console.error(error));
