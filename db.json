@@ -37,93 +37,12 @@
     "poster": "https://occ-0-5535-32.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUrdbsBSbgF4ULiSBA6baQFfyd8-WepRtTUwiefBl0J-IlPNOt03n6ECf0Z8-5h1HfBSHMTqKozDDtnuupPmndmdefdmjIFwJk0.webp?r=ce8",
     "url": "https://youtu.be/b9EkMc79ZSU"
   }
-],
-
-"Featured" : [
-{
-  "id": 1,
-  "title": "Stranger Things",
-  "genre": "Sci-Fi, Horror",
-  "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
-  "releaseYear": 2016,
-  "poster": "https://occ-0-5535-32.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfFwg8SdXW5iUE-GBtK07AfiwRAAVRZnukJUiYwQQaNJgiI3Q_8rOxYJw729qPG8l22V-iM8jyuK8fBA1C84ys4irIa6B7xtfGZkNBEaq0QVeRbojORrouTfDp2QRlqdVanZ3IU5wHOKhgM7bXHdL7byyEtRIsxCnJjpMlBhU55_7V4r4qliJ4EUmI2Dhw0.jpg?r=a08",
-  "url": "https://youtu.be/b9EkMc79ZSU"
-},
-{
-  "id": 2,
-  "title": "The Crown",
-  "genre": "Drama, History",
-  "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
-  "releaseYear": 2016,
-  "poster": "https://occ-0-6399-6126.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ0IIRm9KdvEIHX8pEG19_nwxu8sV_ai2FXeApKN_d2mY6_Cmw2TykaORJg2tjOq4P5Sx9TfNoCkdsPdTfIn7ehG27wFLUH3VPeMqeQL4eUMUqtXTsxJ46otf-Uq6OKBpoGN.jpg?r=4d2",
-   "url": "https://youtu.be/b9EkMc79ZSU"
-},
-{
-  "id": 1,
-  "title": "Stranger Things",
-  "genre": "Sci-Fi, Horror",
-  "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
-  "releaseYear": 2016,
-  "poster": "https://occ-0-5535-32.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVD3WPpGGTRZ8F2cSlD5eRdS9f1J7CpOeg7S2Ql1KM0yibN73oDxLJKPEK7mM1Zml0-SUn0EAYT7866j4o4NwCLYpZM4yLEbNG0.webp?r=ff8",
-  "url": "https://youtu.be/b9EkMc79ZSU"
-},
-{
-  "id": 1,
-  "title": "Stranger Things",
-  "genre": "Sci-Fi, Horror",
-  "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
-  "releaseYear": 2016,
-  "poster": "https://occ-0-5535-32.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb_06zw131dRsn1E4oeJymNW7mtpbwkNPDB7xkctzhLq6hI3UWd7vpFFb7X8z4HmBKVxkksoo52B4piEEiR3oXeVsfb55u9jVEs.webp?r=a60",
-  "url": "https://youtu.be/b9EkMc79ZSU"
-}
-
-],
-"Scifi"  : [
-{
-  "id": 1,
-  "title": "Stranger Things",
-  "genre": "Sci-Fi, Horror",
-  "description": "When a young boy disappears, his mother, a.",
-  "releaseYear": 2016,
-  "poster": "https://i.ytimg.com/vi/vS3_72Gb-bI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD6HeVvwekyIE7wp39guh4nmAIcBA",
-
-  "url": "https://youtu.be/vS3_72Gb-bI"
-
-
-},
-{
-  "id": 1,
-  "title": "Stranger Things",
-  "genre": "Sci-Fi, Horror",
-  "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
-  "releaseYear": 2016,
-  "poster": "https://occ-0-6399-6126.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU4q7Az6MhQre0gLszdVSDJkh_bT4_AyLuDkNFBO29-ppCWizRCwQv0WGMuV_DKerMg7W7YcGgSXR3h06_Q53hgiQ8ONEIVLNJwk0rkdLlYh8MtoHK97spCikvVZJNMdxl25.jpg?r=6e7",
-
-  "url": "https://www.youtube.com/watch?v=Se26Op9sEC8"
-
-},
-{
-  "id": 1,
-  "title": "Stranger Things",
-  "genre": "Sci-Fi, Horror",
-  "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
-  "releaseYear": 2016,
-  "poster": "https://occ-0-6399-6126.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABV5_ftQ1234i9nZD3GW7WBIVOoTL8v-wujIAfKcNCYOKV-YU8eA-1iwKaUP9xEls2SMy1d6aF0vPP2gpHBxFfIvoTVQ8hfut3AL5CDdVrETiR_Q0u4CTKIjHdY2zWiHsbELx.jpg?r=880",
-  "url": "https://youtu.be/r51cYVZWKdY"
-},
-{
-  "id": 1,
-  "title": "Stranger Things",
-  "genre": "Sci-Fi, Horror",
-  "description": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
-  "releaseYear": 2016,
-  "poster": "https://occ-0-6399-6126.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUqWqTrWjNDxK_78WnRwGKxJ62Z2rc9eGIDD6ebf4pFDEEurJo6RBkRYgZ2D5nXIPV5pJyGWEU65vRlo_Hj9MIxwKHoQBxcXRgyGqvJ9KuegsaJremqTbRUsUsqqpZbBU7DX.jpg?r=b25",
-  "url": "https://youtu.be/GVPzGBvPrzw"
-}
-
-
-
 ]
+
+
+
+
+
 
 
 }
